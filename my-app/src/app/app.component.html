@@ -1,0 +1,30 @@
+<!--<app-child [name]="person"></app-child>
+<button (click)="changeName()">ChangeName</button>-->
+<!--<app-two-way></app-two-way>-->
+<!--<div *ngFor="let item of items">-->
+  <!--{{item.item}}-->
+  <!--{{item.price}}-->
+<!--</div>-->
+<!--<input type="text" [(ngModel)]="item">-->
+<!--<input type="text" [(ngModel)]="price">-->
+<!--<button (click)="addWidget(item,price)">Add</button>-->
+
+<!--<nav>-->
+  <!--<div class="nav-wrapper">-->
+    <!--<a href="#" class="brand-logo">Logo</a>-->
+    <!--<ul id="nav-mobile" class="right hide-on-med-and-down">-->
+      <!--<li><a [routerLink]=link.home>Home</a></li>-->
+      <!--<li><a [routerLink]=link.about>About</a></li>-->
+    <!--</ul>-->
+  <!--</div>-->
+<!--</nav>-->
+<!--<router-outlet></router-outlet>-->
+
+<div class="row">
+  <div class="col s12 m6">
+    <app-input (notify)="addWidget($event)" [item] = 'itemFound'></app-input>
+  </div>
+  <div class = "col s12 m6">
+    <app-display [items]="items" (notify)="updateWidget($event)" ></app-display>
+  </div>
+</div>

@@ -1,0 +1,4 @@
+<input type="text" [(ngModel)] = "name">
+<app-desc [childName]="name" (notify) = changeName($event)></app-desc>
+<br>
+Parent:{{name}}
